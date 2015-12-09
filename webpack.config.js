@@ -1,40 +1,32 @@
+var path = require('path');
+var webpack = require('webpack');
+
 module.exports = {
-  entry: './app/App.js',
+  entry: [
+    'babel-polyfill',
+    './client/main',
+    'webpack-dev-server/client?http://localhost:8080'
+  ],
   output: {
-    path: __dirname,
-    filename: 'public/bundle.js'
+      publicPath: '/',
+      filename: 'main.js'
   },
+  debug: true,
+  devtool: 'source-map',
   module: {
     loaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel'
+      { 
+        test: /\.js$/,
+        include: path.join(__dirname, 'client'),
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react']
+        }
       }
     ]
+  },
+  devServer: {
+    contentBase: "./client"
   }
-}
+};
 
-// module.exports = {
-//   entry: './client/main.js',
-//   output: {
-//     path: __dirname + '/client/build',
-//     filename: 'bundle.js',
-//   },
-//   module: {
-//     loaders: [
-//       {
-//         test: /\.jsx?$/,
-//         exclude: /node_modules/,
-//         loader: 'babel',
-//         query: {
-//           presets: ['react']
-//         }
-//       },
-//       {
-//         test: /\.css$/,
-//         loader: 'style!css'
-//       }
-//     ]
-//   }
-// };
