@@ -17,6 +17,7 @@ module.exports = {
     loaders: [
       { 
         test: /\.js$/,
+        exclude: /(node_modules)/,
         include: path.join(__dirname, 'client'),
         loader: 'babel-loader',
         query: {
@@ -29,4 +30,3 @@ module.exports = {
     contentBase: "./client"
   }
 };
-
