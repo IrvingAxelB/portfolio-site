@@ -7,20 +7,19 @@ import portfolio from './portfolio.js'
 import contact from './contact.js'
 import home from './home.js'
 
-
-class nav extends React.Component {
+class Header extends React.Component {
   render() {
     return (
-      <div>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/portfolio">Portfolio</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-    </div>
+      <header id='header' >
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
+      </header>
     )
   }
 }
 
-export default nav;
+export default Header;
