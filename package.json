@@ -5,6 +5,8 @@
   "main": "client/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss client/styles/sass/main.scss client/styles/public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "repository": {
