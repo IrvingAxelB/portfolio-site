@@ -6,18 +6,15 @@ import about from './components/about.js'
 import portfolio from './components/portfolio.js'
 import contact from './components/contact.js'
 import home from './components/home.js'
-import Header from './components/header.js'
-import Footer from './components/footer.js'
+
+// import Header from './components/header.js'
+// import Footer from './components/footer.js'
 
 class main extends React.Component {
   render() {
     return (
       <div>
-        <Header />
-        <div>
-          {this.props.children}
-        </div>
-        <Footer />
+        {this.props.children}
       </div>
     )
   }
