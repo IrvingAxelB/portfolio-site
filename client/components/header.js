@@ -1,21 +1,16 @@
 import React from 'react'
-import { render } from 'react-dom'
-import { Router, Route, IndexRoute, Link, IndexLink } from 'react-router'
-import { createHistory, useBasename } from 'history'
-import about from './about.js'
-import portfolio from './portfolio.js'
-import contact from './contact.js'
-import home from './home.js'
+import { Link } from 'react-router'
 
 class Header extends React.Component {
   render() {
     return (
-      <header id='header' >
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+      <header className='header' >
+        <nav className='nav'>
+          <Link className='links' to="/">H O M E</Link>
+          <Link className='links' to="/portfolio">P O R T F O L I O</Link>
+          <Link to='/' ><div className='logo-container'><img className='logo' src='../styles/public/assets/logo-black.png' /></div></Link>
+          <Link className='links' to="/about">A B O U T</Link>
+          <Link className='links' to="/contact">C O N T A C T</Link>
         </nav>
       </header>
     )
