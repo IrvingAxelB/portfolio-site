@@ -7,9 +7,6 @@ import portfolio from './components/portfolio.js'
 import contact from './components/contact.js'
 import home from './components/home.js'
 
-// import Header from './components/header.js'
-// import Footer from './components/footer.js'
-
 class main extends React.Component {
   render() {
     return (
