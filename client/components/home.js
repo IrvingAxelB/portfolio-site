@@ -9,7 +9,7 @@ class Home extends React.Component {
         <HomeHeader />
         
         <h1 className='home-display'><span className='display-box'>Irving Barajas</span></h1>
-        <p className='home-description'>Full-Stack Software Engineer</p>
+        <p className='home-description'>Software Engineer</p>
 
       </section>
     )
