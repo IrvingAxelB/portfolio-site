@@ -8,7 +8,7 @@ class About extends React.Component {
       <section className='about-container'>
         <Header />
         
-        <h1 className='description'>Hi, I'm Irving Barajas, a Software Engineer currently working at MakerSquare.</h1>
+        <h1 className='description'>Hi, I'm Irving Barajas, a Software Engineer currently searching for new opportunities.</h1>
         <h2 className='specialized'>I'm Specialized in</h2>
         <div className='specialized-table'>
           <div className='skills-container'>
@@ -36,7 +36,7 @@ class About extends React.Component {
             <img className='skills-img' src='../styles/public/assets/prototyping.png' />
             <h4 className='skills-header'>Prototyping</h4>
             <span className='skills-line'></span>
-            <p className='skills-description'></p>
+            <p className='skills-description'>My coding knowledge gives me the ability to prototype even complex ideas.</p>
           </div>
          
           <div className='skills-container'>
