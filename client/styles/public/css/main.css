@@ -205,3 +205,20 @@ nav {
   padding: 40px;
   border-bottom: 1px solid rgba(49, 49, 49, 0.1);
   border-right: 1px solid rgba(49, 49, 49, 0.1); }
+
+.skills-img {
+  max-width: 200px;
+  width: 100%; }
+
+.skills-header {
+  margin-bottom: 11px;
+  margin-top: 10px; }
+
+.skills-line {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  border-bottom: 1px;
+  opacity: .3;
+  background: #313131;
+  text-align: center; }
