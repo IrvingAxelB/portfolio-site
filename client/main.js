@@ -2,10 +2,10 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, Link, IndexLink } from 'react-router'
 import { createHistory, useBasename } from 'history'
-import about from './components/about.js'
-import portfolio from './components/portfolio.js'
-import contact from './components/contact.js'
-import home from './components/home.js'
+// import about from './components/about.js'
+// import portfolio from './components/portfolio.js'
+// import contact from './components/contact.js'
+// import home from './components/home.js'
 
 class main extends React.Component {
   render() {

@@ -1,0 +1,58 @@
+.description {
+  color: #313131;
+  font-family: "brandon-grotesque",Arial,Helvetica,sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 50;
+  letter-spacing: 0.05em;
+  margin: 40px 0px 40px 0px;
+  padding: 0px 25px 0px 25px;
+}
+.specialized {
+  font-family: "brandon-grotesque",Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 15px 0px 15px 0px;  
+  border-top: 1px solid rgba(49,49,49,0.1);
+  border-bottom: 1px solid rgba(49,49,49,0.1);
+  color: #313131;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+.specialized-table {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: wrap;
+
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.skills-container {
+  flex-grow: 1;
+  width: 27.333%;
+  display: inline-block;
+  text-align: center;
+
+  padding: 40px;
+  border-bottom: 1px solid rgba(49,49,49,0.1);
+  border-right: 1px solid rgba(49,49,49,0.1);
+}
+.skills-img {
+  max-width: 200px;
+  width: 100%;
+}
+.skills-header {
+  margin-bottom: 11px;
+  margin-top: 10px;
+}
+.skills-line {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  border-bottom: 1px;
+  opacity: .3;
+  background: #313131;
+  text-align: center;
+}
